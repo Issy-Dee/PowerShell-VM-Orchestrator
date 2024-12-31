@@ -16,7 +16,7 @@ $allAzureVMs | ForEach-Object -Parallel {
         -ResourceGroupName $_.ResourceGroupName ` # Use the ResourceGroupName from each VM
         -Name $_.Name `
         -CommandId 'RunPowerShellScript' `
-        -ScriptPath .\script.ps1 
+        -ScriptPath .\test.ps1 
 
     # Format the output with the VM name
     $output = $_.Name + " " + $out.Value[0].Message
