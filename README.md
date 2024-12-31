@@ -19,6 +19,12 @@ Before starting, ensure the following:
 - Permission to manage VMs in the subscription.
 - Access to Azure Cloud Shell.
 
+### How It Works in Practice
+- Sets the context to the correct Azure subscription and resource group.
+- Filters out non-running or non-Windows VMs.
+- Runs a PowerShell script (script.ps1) on all filtered VMs concurrently using Invoke-AzVMRunCommand.
+- Outputs the results for each VM with its name and the script output message.
+
 #### Step 1 - Powershell Script
 
 
