@@ -1,6 +1,6 @@
 ``` PowerShell
 # Azure Subscription I want to use
-$subscriptionId = "9b4c2483-5e4c-4233-a5dd-fb638198918e"
+$subscriptionId = "xxxx-xxxx-xxxx-xxxx"
 
 # Select the right Azure subscription
 Set-AzContext -Subscription $subscriptionId
